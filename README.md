@@ -37,7 +37,6 @@ python3.12 -m venv env
 ```
 
 3. Activate the virtual environment
-```
 # On Linux or MacOS
 ```
 source env/bin/activate
