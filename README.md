@@ -37,12 +37,12 @@ python3.12 -m venv env
 ```
 
 3. Activate the virtual environment
-# On Linux or MacOS
+### On Linux or MacOS
 ```
 source env/bin/activate
 ```
 
-# On MS Windows
+### On MS Windows
 ```
 env\Scripts\activate
 ```
@@ -53,12 +53,12 @@ pip install -r requirements.txt
 ```
 
 5. Run the application:
-# On Linux or MacOS
+### On Linux or MacOS
 ```
 python3 main.py
 ```
 
-# On MS Windows
+### On MS Windows
 ```
 python main.py
 ```
