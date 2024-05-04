@@ -26,3 +26,28 @@ Make sure you have installed the required dependencies in order to use the appli
 Clone the repository:
 
 ```git clone [https://github.com/colarrbear/Heart-Attack-Analysis](https://github.com/1stChaS/NextPage/tree/main)```
+
+Create a virtual environment and install dependencies
+
+Change your directory to NextPage/code
+```cd NextPage/code```
+
+Create virtual environment using this command.
+```python3.12 -m venv env```
+
+Activate the virtual environment
+On Linux or MacOS:
+```source env/bin/activate```
+
+On MS Windows:
+```env\Scripts\activate```
+
+Installing Dependencies
+```pip install -r requirements.txt```
+
+Run the application:
+On Linux or MacOS:
+```python main.py```
+
+On MS Windows:
+```python3 main.py```
