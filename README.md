@@ -17,26 +17,15 @@ NextPage is an application designed to enrich the reading experience by utilizin
 Ensure you have all necessary dependencies installed to use the application. For detailed dependency information, please refer to the `requirements.txt` file.
 
 ### Setup Instructions
-
-1. **Clone the repository:**
+---
+**Clone the repository:**
 ```
-git clone [(https://github.com/1stChaS/NextPage/tree/main)](https://github.com/1stChaS/NextPage/tree/main)](https://github.com/1stChaS/NextPage/tree/main)
+git clone https://github.com/1stChaS/NextPage.git
 ```
 
-3. **Create a virtual environment:**
-- **Linux/MacOS:**
-  ```
-  python3.12 -m venv env
-  source env/bin/activate
-  ```
-- **Windows:**
-  ```
-  python3.12 -m venv env
-  env\Scripts\activate
-  ```
 
   ### Create a virtual environment and install dependencies
-
+---
 1. Change your directory to NextPage/code
 ```
 cd NextPage/code
@@ -44,15 +33,18 @@ git checkout preview
 ```
 2. Create virtual environment using this command.
 ```
-python3.11 -m venv env
+python3.12 -m venv env
 ```
 
 3. Activate the virtual environment
 ```
 # On Linux or MacOS
+```
 source env/bin/activate
+```
 
 # On MS Windows
+```
 env\Scripts\activate
 ```
 
@@ -62,7 +54,12 @@ pip install -r requirements.txt
 ```
 
 5. Run the application:
+# On Linux or MacOS
+```
+python3 main.py
+```
 
+# On MS Windows
 ```
 python main.py
 ```
