@@ -43,7 +43,7 @@ source env/bin/activate
 
 On MS Windows
 ```
-env/Scripts/activate
+env\Scripts\activate
 ```
 
 4. Installing Dependencies
