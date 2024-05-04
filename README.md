@@ -26,9 +26,9 @@ git clone https://github.com/1stChaS/NextPage.git
 
   ### Create a virtual environment and install dependencies
 ---
-1. Checkout preview
+1. Change your directory to NextPage
 ```
-git checkout preview
+cd NextPage
 ```
 2. Create virtual environment using this command.
 ```
