@@ -26,14 +26,13 @@ git clone https://github.com/1stChaS/NextPage.git
 
   ### Create a virtual environment and install dependencies
 ---
-1. Change your directory to NextPage/code
+1. Change your directory to NextPage
 ```
-cd NextPage/code
-git checkout preview
+cd NextPage
 ```
 2. Create virtual environment using this command.
 ```
-python3.12 -m venv env
+python -m venv env
 ```
 
 3. Activate the virtual environment
@@ -53,12 +52,6 @@ pip install -r requirements.txt
 ```
 
 5. Run the application:
-On Linux or MacOS
-```
-python3 main.py
-```
-
-On MS Windows
 ```
 python main.py
 ```
