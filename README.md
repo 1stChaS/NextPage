@@ -1,53 +1,69 @@
 # NextPage
----
-This project wants to use data visualization and recommend books to help users discover interesting books. By utilizing the Goodreads dataset about books and what people think of them, the project hopes to give users helpful tips and ideas for their next enjoyable reading experience.
----
 
-## Data
----
-Source: from [Kaggle.](https://www.kaggle.com/datasets/cristaliss/ultimate-book-collection-top-100-books-up-to-2023/data)
----
+### Introduction
+NextPage is an application designed to enrich the reading experience by utilizing data visualization and personalized book recommendations. By leveraging the Goodreads dataset, the project aims to provide users with insights into book trends and reader preferences, helping them discover books that match their interests.
 
-## Main Features
----
-- Data Visualization: Provides valuable insights into book trends and reader preferences.
-- Filtering: Users can explore more books by filter.
-- Book recommendation system: Recommend 10 books that the user might find interesting using similarity calculations based on rating and genre.
----
+### Data
+- **Source:** The data used in this project is sourced from Kaggle, featuring an extensive collection of books and reviews from the Goodreads platform.
 
-# Running the Application
----
-Requirements
+### Main Features
+- **Data Visualization:** Offers valuable insights into book trends and reader preferences, helping users make informed decisions about their next reads.
+- **Filtering:** Allows users to explore books based on various criteria such as genre, rating, and more, enabling a tailored browsing experience.
+- **Book Recommendation System:** Utilizes similarity calculations based on rating and genre to recommend a curated list of 10 books that the user is likely to enjoy.
 
-Make sure you have installed the required dependencies in order to use the application, please read:
-```requirement.txt```
+## Running the Application
 
+### Requirements
+Ensure you have all necessary dependencies installed to use the application. For detailed dependency information, please refer to the `requirements.txt` file.
 
-Clone the repository:
+### Setup Instructions
 
-```git clone [https://github.com/colarrbear/Heart-Attack-Analysis](https://github.com/1stChaS/NextPage/tree/main)```
+1. **Clone the repository:**
+```
+git clone [(https://github.com/1stChaS/NextPage/tree/main)](https://github.com/1stChaS/NextPage/tree/main)](https://github.com/1stChaS/NextPage/tree/main)
+```
 
-Create a virtual environment and install dependencies
+3. **Create a virtual environment:**
+- **Linux/MacOS:**
+  ```
+  python3.12 -m venv env
+  source env/bin/activate
+  ```
+- **Windows:**
+  ```
+  python3.12 -m venv env
+  env\Scripts\activate
+  ```
 
-Change your directory to NextPage/code
-```cd NextPage/code```
+  ### Create a virtual environment and install dependencies
 
-Create virtual environment using this command.
-```python3.12 -m venv env```
+1. Change your directory to NextPage/code
+```
+cd NextPage/code
+git checkout preview
+```
+2. Create virtual environment using this command.
+```
+python3.11 -m venv env
+```
 
-Activate the virtual environment
-On Linux or MacOS:
-```source env/bin/activate```
+3. Activate the virtual environment
+```
+# On Linux or MacOS
+source env/bin/activate
 
-On MS Windows:
-```env\Scripts\activate```
+# On MS Windows
+env\Scripts\activate
+```
 
-Installing Dependencies
-```pip install -r requirements.txt```
+4. Installing Dependencies
+```
+pip install -r requirements.txt
+```
 
-Run the application:
-On Linux or MacOS:
-```python main.py```
+5. Run the application:
 
-On MS Windows:
-```python3 main.py```
+```
+python main.py
+```
+
