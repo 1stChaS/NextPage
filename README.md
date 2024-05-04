@@ -4,7 +4,7 @@
 NextPage is an application designed to enrich the reading experience by utilizing data visualization and personalized book recommendations. By leveraging the Goodreads dataset, the project aims to provide users with insights into book trends and reader preferences, helping them discover books that match their interests.
 
 ### Data
-- **Source:** The data used in this project is sourced from Kaggle, featuring an extensive collection of books and reviews from the Goodreads platform.
+- **Source:** [Kaggle.](https://www.kaggle.com/datasets/cristaliss/ultimate-book-collection-top-100-books-up-to-2023/data)
 
 ### Main Features
 - **Data Visualization:** Offers valuable insights into book trends and reader preferences, helping users make informed decisions about their next reads.
