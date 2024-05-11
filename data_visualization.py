@@ -92,5 +92,7 @@ class DataVisualizationPage(tk.Frame):
         stats1 = self.data[attribute1].describe().apply(lambda x: f"{x:,.4f}")
         stats2 = self.data[attribute2].describe().apply(lambda x: f"{x:,.4f}")
 
-        ttk.Label(self.stats_frame, text=f"Statistics: {attribute1} \n{stats1}", justify=tk.LEFT).pack(side=tk.TOP, fill=tk.BOTH, expand=True)
-        ttk.Label(self.stats_frame, text=f"Statistics: {attribute2} \n{stats2}", justify=tk.LEFT).pack(side=tk.TOP, fill=tk.BOTH, expand=True)
+        ttk.Label(self.stats_frame, text=f"Statistics: {attribute1} \n{stats1}",
+                  justify=tk.LEFT).pack(side=tk.TOP, fill=tk.BOTH, expand=True)
+        ttk.Label(self.stats_frame, text=f"Statistics: {attribute2} \n{stats2}",
+                  justify=tk.LEFT).pack(side=tk.TOP, fill=tk.BOTH, expand=True)

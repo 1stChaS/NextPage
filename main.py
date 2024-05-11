@@ -11,7 +11,7 @@ def show_page(page):
 
 
 root = tk.Tk()
-root.title("NextPage Book Management System")
+root.title("NextPage")
 root.geometry('1350x600')
 
 # Tabs
