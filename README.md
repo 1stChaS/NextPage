@@ -5,6 +5,7 @@ NextPage is an application designed to enrich the reading experience by utilizin
 
 ### Data
 - **Source:** [Kaggle.](https://www.kaggle.com/datasets/cristaliss/ultimate-book-collection-top-100-books-up-to-2023/data)
+- **Githup:** [1stChaS](https://github.com/1stChaS/NextPage)
 
 ### Main Features
 - **Data Visualization:** Offers valuable insights into book trends and reader preferences, helping users make informed decisions about their next reads.
@@ -12,6 +13,13 @@ NextPage is an application designed to enrich the reading experience by utilizin
 - **Book Recommendation System:** Utilizes similarity calculations based on rating and genre to recommend a curated list of 10 books that the user is likely to enjoy.
 
 ## Running the Application
+[Main Page](data/pic1.png)
+
+[Book Recommendation](data/pic3.png)
+
+[Interesting Data](data/pic4.png)
+
+[Data Visualization](data/pic7.png)
 
 ### Requirements
 Ensure you have all necessary dependencies installed to use the application. For detailed dependency information, please refer to the `requirements.txt` file.
@@ -55,4 +63,5 @@ pip install -r requirements.txt
 ```
 python main.py
 ```
+
 
