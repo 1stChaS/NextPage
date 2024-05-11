@@ -110,7 +110,7 @@ class InterestingDataPage(tk.Frame):
         # Assume you have prepared 'top10_books' with the necessary data
         top10_books = self.df.nlargest(10, 'Rating')
         self.ax.clear()
-        barplot = sns.barplot(x='Book', y='Rating', data=top10_books, ax=self.ax, palette="viridis")
+        barplot = sns.barplot(y='Book', x='Rating', data=top10_books, ax=self.ax, palette="viridis", hue='Book')
         self.ax.set_title('Top 10 Rated Books')
         self.ax.set_xlabel('Book Title')
         self.ax.set_ylabel('Rating')
