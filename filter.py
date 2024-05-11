@@ -14,6 +14,8 @@ class FilterBooksPage(tk.Frame):
         self.data['num_pages'] = pd.to_numeric(self.data['num_pages'], errors='coerce')
         self.data.dropna(subset=['num_pages'], inplace=True)  # Remove rows where 'num_pages' conversion failed
         self.data['num_pages'] = self.data['num_pages'].astype(int)
+        # self.data['genres'] = self.data['genres'].apply(lambda x: [genre.strip() for genre in x.strip("[]").split(",")])
+        # self.data = self.data.explode('genres')
 
     def filter_books(self):
         title_search = self.title_entry.get().lower()
