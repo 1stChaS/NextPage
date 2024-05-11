@@ -46,8 +46,8 @@ class FilterBooksPage(tk.Frame):
         self.result_listbox.insert(tk.END, f"{'Title':<80}{'Rating':<10}{'Pages':<10}{'Genres'}")
         # Data rows
         for index, row in filtered_data.iterrows():
-            title = row['title'] if len(row['title']) < 47 else row['title'][:100]
-            genres = row['genres'] if len(row['genres']) < 30 else row['genres'][:100]
+            title = row['title'] if len(row['title']) < 30 else row['title'][:60]
+            genres = row['genres'] if len(row['genres']) < 20 else row['genres'][:25]
             list_entry = f"{title:<80}{row['rating_score']:<10}{row['num_pages']:<10}{genres}"
             self.result_listbox.insert(tk.END, list_entry)
 

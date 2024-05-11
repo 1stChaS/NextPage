@@ -71,9 +71,9 @@ class DataVisualizationPage(tk.Frame):
     def draw_scatter_plot(self):
         x = self.selected_attribute1.get()
         y = self.selected_attribute2.get()
-        self.data.plot(kind='scatter', x=x, y=y, ax=self.ax, label=f"{x} vs {y}")
+        sns.regplot(x=x, y=y, data=self.data, ax=self.ax,
+                    scatter_kws={'s': 50, 'alpha': 0.5}, line_kws={'color': 'red'})
         self.ax.set_title(f'Scatter Plot of {x} vs {y}')
-        self.ax.legend()  # Add legend dynamically
 
     def draw_heat_map(self):
         corr = self.data[[self.selected_attribute1.get(), self.selected_attribute2.get()]].corr()
@@ -92,7 +92,5 @@ class DataVisualizationPage(tk.Frame):
         stats1 = self.data[attribute1].describe().apply(lambda x: f"{x:,.4f}")
         stats2 = self.data[attribute2].describe().apply(lambda x: f"{x:,.4f}")
 
-        ttk.Label(self.stats_frame, text=f"Statistics: {attribute1} \n{stats1}",
-                  justify=tk.LEFT).pack(side=tk.TOP, fill=tk.BOTH, expand=True)
-        ttk.Label(self.stats_frame, text=f"Statistics: {attribute2} \n{stats2}",
-                  justify=tk.LEFT).pack(side=tk.TOP, fill=tk.BOTH, expand=True)
+        ttk.Label(self.stats_frame, text=f"Statistics: {attribute1} \n{stats1}", justify=tk.LEFT).pack(side=tk.TOP, fill=tk.BOTH, expand=True)
+        ttk.Label(self.stats_frame, text=f"Statistics: {attribute2} \n{stats2}", justify=tk.LEFT).pack(side=tk.TOP, fill=tk.BOTH, expand=True)
